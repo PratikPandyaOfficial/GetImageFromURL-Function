@@ -1,0 +1,5 @@
+func getImageFromURL(url:String) -> UIImage{
+    let url = URL(string: url)
+    let data = try? Data(contentsOf: url!)
+    return UIImage(data: data!)!
+}
